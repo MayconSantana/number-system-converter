@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Conversão de Bases</title>
+</head>
+<body>
+    <main>
+        <div class="insert-num">
+            <div class="input-value">
+                <h1>Valor a ser convertido:</h1>
+                <div class="opcoes">
+                    <div class="opcao">
+                        <label for="decimal">Decimal</label>
+                        <input type="radio" name="opcoes_1" value="decimal" id="decimal">
+                    </div>
+    
+                    <div class="opcao">
+                        <label for="binario">Binário</label>
+                        <input type="radio" name="opcoes_1" value="binario" id="binario">
+                    </div>
+                    
+                    <div class="opcao">
+                        <label for="octal">Octal</label>
+                        <input type="radio" name="opcoes_1" value="octal" id="octal">
+                    </div>
+        
+                    <div class="opcao">
+                        <label for="hexadecimal">Hexadecimal</label>
+                        <input type="radio" name="opcoes_1" value="hexadecimal" id="hexadecimal">
+                    </div>
+                </div>
+                <input type="text" name="num" class="input">
+            </div>
+
+            <h2>Será convertido para: </h2>
+
+            <div class="opcoes">
+                <div class="opcao">
+                    <label for="decimal_2">Decimal</label>
+                    <input type="radio" name="opcoes_2" value="decimal" id="decimal_2">
+                </div>
+
+                <div class="opcao">
+                    <label for="binario_2">Binário</label>
+                    <input type="radio" name="opcoes_2" value="binario" id="binario_2">
+                </div>
+                
+                <div class="opcao">
+                    <label for="octal_2">Octal</label>
+                    <input type="radio" name="opcoes_2" value="octal" id="octal_2">
+                </div>
+    
+                <div class="opcao">
+                    <label for="hexadecimal_2">Hexadecimal</label>
+                    <input type="radio" name="opcoes_2" value="hexadecimal" id="hexadecimal_2">
+                </div>
+            </div>
+
+            <button>Converter</button>
+        </div>
+
+        <div class="result-num hide">
+            <h2>RESULTADO:</h2>
+            <p id="p_type"></p>
+            <h3 id="result"></h3>
+
+            <button>Voltar</button>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
