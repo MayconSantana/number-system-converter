@@ -108,6 +108,8 @@ const hexadecimal_octal = (value) => {
 
 
 const naoPertenceANenhumSistema = (valor) => {
+    valor = valor.replace(/\s/g, '');
+
     // Verifica se o valor não é um número decimal válido
     if (!/^\d+$/.test(valor)) {
         // Verifica se o valor não é um número binário válido
