@@ -104,12 +104,24 @@ button:hover{
     width: 40%;
 }
 
-.result-num > h2{
+
+.result-num > .box-result > h2{
     font-size: 3rem;
 }
 
-.result-num > h3{
+.result-num > .box-result > h3{
     font-size: 2rem;
+    max-width: 90%;
+    text-align: center;
+}
+
+.result-num > .box-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    word-wrap: break-word;
 }
 
 #p_type{
