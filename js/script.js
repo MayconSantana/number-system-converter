@@ -133,6 +133,7 @@ btnConvert.forEach((e) => {
         const radioInsert = consultRadioValue();
         const radioResult = consultRadioValue2();
         const num = document.querySelector('.input').value;
+        const string = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: justify;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`; 
 
         switch(radioInsert){
             case "decimal":
@@ -142,7 +143,7 @@ btnConvert.forEach((e) => {
                         p_type.textContent = `${num} (decimal) para decimal:`;
 
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
@@ -151,7 +152,7 @@ btnConvert.forEach((e) => {
                         p_type.textContent = `${num} (decimal) para binário:`;
 
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
@@ -160,7 +161,7 @@ btnConvert.forEach((e) => {
                         p_type.textContent = `${num} (decimal) para octal:`;
                         
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
@@ -169,7 +170,7 @@ btnConvert.forEach((e) => {
                         p_type.textContent = `${num} (decimal) para hexadecimal:`;
                         
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
@@ -185,7 +186,7 @@ btnConvert.forEach((e) => {
                         p_type.textContent = `${num} (binário) para decimal:`;
                         
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
@@ -194,7 +195,7 @@ btnConvert.forEach((e) => {
                         p_type.textContent = `${num} (binário) para binário:`;
                         
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
@@ -203,7 +204,7 @@ btnConvert.forEach((e) => {
                         p_type.textContent = `${num} (binário) para octal:`;
                         
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
@@ -212,7 +213,7 @@ btnConvert.forEach((e) => {
                         p_type.textContent = `${num} (binário) para hexadecimal:`;
 
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
@@ -228,7 +229,7 @@ btnConvert.forEach((e) => {
                         p_type.textContent = `${num} (octal) para decimal:`;
 
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
@@ -237,7 +238,7 @@ btnConvert.forEach((e) => {
                         p_type.textContent = `${num} (octal) para binário:`;
                         
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
@@ -246,7 +247,7 @@ btnConvert.forEach((e) => {
                         p_type.textContent = `${num} (octal) para octal:`;
 
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
@@ -255,7 +256,7 @@ btnConvert.forEach((e) => {
                         p_type.textContent = `${num} (octal) para hexadecimal:`;
 
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
@@ -273,7 +274,7 @@ btnConvert.forEach((e) => {
                         console.log(result.textContent)
 
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
@@ -282,7 +283,7 @@ btnConvert.forEach((e) => {
                         p_type.textContent = `${num} (hexadnumecimal) para binário:`;
                         
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
@@ -291,7 +292,7 @@ btnConvert.forEach((e) => {
                         p_type.textContent = `${num} (hexadecimal) para octal:`;
                         
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
@@ -300,7 +301,7 @@ btnConvert.forEach((e) => {
                         p_type.textContent = `${num} (hexadecimal) para hexadecimal:`;
                         
                         if(naoPertenceANenhumSistema(num)){
-                            result.innerHTML = `<h2 style="margin:0 auto; width: 80%; font-size: 1.2rem; text-align: center;">"${num}" não está em nenhum dos sistemas: decimal, binário, octal ou hexadecimal, pois não contém apenas números de 0-9 e letras de A-F.<h2>`
+                            result.innerHTML = string
                         }
                     break;
         
