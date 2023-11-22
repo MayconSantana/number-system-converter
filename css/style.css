@@ -151,14 +151,14 @@ button:hover{
 
 @media (min-width: 501px) and (max-width: 920px){
     .insert-num, .result-num{
-        width: 70%;
+        width: 90%;
         height: 80%;
     }
 }
 
 @media (max-width: 500px){
     .insert-num, .result-num{
-        width: 90%;
+        width: 70%;
         height: 90%;
     }
 
