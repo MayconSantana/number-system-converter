@@ -95,13 +95,13 @@ const hexadecimal_decimal = (value) => {
 }
 
 const hexadecimal_binario = (value) => {
-    const decimalNumber = parseInt(+value, 16);
+    const decimalNumber = parseInt(value, 16);
     const binaryNumber = decimalNumber.toString(2);
     return binaryNumber;
 }
 
 const hexadecimal_octal = (value) => {
-    const decimalNumber = parseInt(+value, 16);
+    const decimalNumber = parseInt(value, 16);
     const octalNumber = decimalNumber.toString(8);
     return octalNumber;
 }
